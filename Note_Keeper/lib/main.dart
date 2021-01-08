@@ -10,10 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Note App",
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-          primaryColor: Colors.deepPurple,
-          accentColor: Colors.deepPurple
-      ),
+      theme: ThemeData.light(),
       home: NoteList(),
     );
   }

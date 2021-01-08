@@ -87,9 +87,10 @@ class _NoteDetailState extends State<NoteDetail> {
           padding: const EdgeInsets.all(10.0),
           child: TextField(
             controller: titleController,
-            onChanged: (value){
+            onSubmitted: (value){
                 debugPrint('Textfield');
                 updateTitle();
+                FocusScope.of(context).unfocus();
             },
             decoration: InputDecoration(
               labelText: 'Title',

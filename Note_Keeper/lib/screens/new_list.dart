@@ -23,22 +23,11 @@ class _NoteListState extends State<NoteList> {
       updateListView();
     }
     return Scaffold(
+     // backgroundColor: Colors.blueGrey,
       appBar: AppBar(
-        leading: IconButton(icon: Icon(Icons.menu),
-            onPressed: (){}
-            ),
-            
+
         title: Text('Notes'),
-        actions: <Widget>[
-          IconButton(
-              icon: Icon(Icons.check),
-              onPressed: () {},
-          ),
-          IconButton(
-            icon: Icon(Icons.more_vert),
-            onPressed: () {},
-          ),
-        ],
+
       ),
 
       body: notesListView(),
